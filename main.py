@@ -3,7 +3,7 @@ from flask import Flask, json, render_template, request, jsonify
 from math import ceil
 from PIL import Image
 
-app = Flask(__name__, static_url_path='/static')
+app = Flask(__name__)
 
 
 @app.route('/', methods=("GET",))
@@ -56,4 +56,4 @@ def generator():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)

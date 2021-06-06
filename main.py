@@ -28,10 +28,6 @@ def generator():
         if "width" in request.form:
             new_width = int(request.form["width"])
 
-        print("chars", chars, type(chars))
-        print("mode", mode, type(mode))
-        print("new_window", new_width, type(new_width))
-
         image = Image.open(request.files["image"])
         width, height = image.size
         ratio = height/width
@@ -51,9 +47,8 @@ def generator():
             )
         }), 201
     except Exception as ex:
-        print(ex)
         return jsonify({"msg": "Something went wrong.. Please try again!", "error": True, "data": None}), 500
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0')

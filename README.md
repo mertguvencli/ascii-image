@@ -4,7 +4,7 @@
 
 Convert your images to ASCII Art.
 
-You can see how it works [here](http://ascii-image.herokuapp.com/)
+You can see how it works [here](https://ascii-image.herokuapp.com/)
 
 ![App Gif](/static/app.gif)
 

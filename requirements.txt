@@ -1,3 +1,4 @@
 Pillow
 flask
 flake8
+gunicorn
